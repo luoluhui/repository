@@ -1,0 +1,21 @@
+<c3p0-config>
+  <named-config name="c3p0">
+  
+  	<!-- 配置数据源 -->
+  	<property name="driverClass">com.mysql.jdbc.Driver</property>
+  	<property name="user">root</property>
+  	<property name="password">123456qq</property>
+  	<property name="jdbcUrl">jdbc:mysql://localhost:3306/blog?useSSL=true</property>
+  	
+    <property name="acquireIncrement">10</property>
+    <property name="initialPoolSize">10</property>
+    <property name="minPoolSize">10</property>
+    <property name="maxPoolSize">50</property>
+
+    <property name="maxStatements">10</property> 
+    <property name="maxStatementsPerConnection">5</property>
+
+   
+  </named-config>
+</c3p0-config>
+	
